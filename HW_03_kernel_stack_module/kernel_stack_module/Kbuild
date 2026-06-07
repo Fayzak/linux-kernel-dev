@@ -1,0 +1,4 @@
+obj-m := kernel_stack.o
+kernel_stack-objs := src/main.o src/sysfs.o lib/stack.o lib/stack_ops.o
+
+ccflags-y := -I$(PWD)/inc -I$(PWD)/lib/inc
