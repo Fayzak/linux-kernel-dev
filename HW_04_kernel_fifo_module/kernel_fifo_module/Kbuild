@@ -1,0 +1,4 @@
+obj-m := kernel_fifo.o
+kernel_fifo-objs := src/main.o src/params.o src/fifo_ops.o
+
+ccflags-y := -I$(PWD)/inc
