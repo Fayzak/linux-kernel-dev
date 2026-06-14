@@ -1,0 +1,4 @@
+obj-m := kernel_alloc.o
+kernel_alloc-objs := src/main.o src/params.o src/allocator.o src/bitmap.o
+
+ccflags-y := -I$(PWD)/inc
