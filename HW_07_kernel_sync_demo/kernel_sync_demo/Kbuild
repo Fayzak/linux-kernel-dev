@@ -1,0 +1,4 @@
+obj-m := kernel_sync_demo.o
+kernel_sync_demo-objs := src/main.o src/params.o src/worker.o src/sync.o
+
+ccflags-y := -I$(PWD)/inc
