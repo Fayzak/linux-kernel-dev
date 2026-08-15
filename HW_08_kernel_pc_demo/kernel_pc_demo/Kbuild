@@ -1,0 +1,4 @@
+obj-m := kernel_pc_demo.o
+kernel_pc_demo-objs := src/main.o src/params.o src/producer.o src/consumer.o
+
+ccflags-y := -I$(PWD)/inc
