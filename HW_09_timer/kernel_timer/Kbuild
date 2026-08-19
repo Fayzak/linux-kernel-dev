@@ -1,0 +1,4 @@
+obj-m := kernel_timer.o
+kernel_timer-objs := src/main.o
+
+ccflags-y := -I$(PWD)/inc
